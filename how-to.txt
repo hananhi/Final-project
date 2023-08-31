@@ -1,0 +1,26 @@
+0. Assume we have a source code of an application(Order Management using SpringBoot).
+
+1. Make sure you are in top directory of the project. If not (cd to the correct path)
+
+2. create a file named DockerFile (this would be a configuration for the image you are about to create)
+
+3. add the correct configuration. for example: a SpringBoot app needed the following: 
+    "# Use a base image with Java 17
+    FROM openjdk:17-jdk
+
+    # Set the working directory inside the container
+    WORKDIR /app
+
+    # Copy the build files and dependencies
+    COPY build/libs/*.jar app.jar
+
+    # Expose the port the application will run on
+    EXPOSE 8080
+
+    # Define the command to run when the container starts
+    CMD ["java", "-jar", "app.jar"]"
+4. use the command:  docker build -t order-management .
+    ** you now should have a docker image of the app.
+
+5. To run the image use the command:  docker run -p 8080:8080 order-management 
+    # 8080:8080 is so that we expose to port 8080
