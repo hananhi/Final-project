@@ -1,0 +1,6 @@
+How to Install Docker step by step 
+Go to Docker web site anf downlad the docker file 
+Double click on Docker Desktop installer.exe to Run installer 
+always enable Hyper-V Windows Feature on the Configuration page.
+Then, follow the installation process to allow the installer and wait till the process is done.
+After completion of the installation process, click Close and restart
