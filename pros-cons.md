@@ -12,4 +12,3 @@
 * ***Compatibility Issues:***Some applications may not seamlessly fit into a containerized environment.
 #### here's the resourse for it:
 https://www.altexsoft.com/blog/docker-pros-and-cons/
-
